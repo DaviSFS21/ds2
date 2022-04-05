@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="opera-gx">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <title>DS2 - Cadastro de Produto</title>
+</head>
+<body class="fundo">
+    <header class="cabecalho">
+        <div class="logo_cabecalho">
+            <a href = "index.html"><h1>DS2</h1></a>
+        </div>
+        <div class="paginas_cabecalho">
+            <a href = "form_cad_prod.html">Cadastrar produtos</a>
+        </div>
+    </header>
+    <div class="fundo">
+        <div class="titulo">
+            <h1>DS2 - Cadastro de Produto</h1>
+        </div>
+        <div class="texto">
+        <form name = "cadastrar_produto" method = "post" action ="cad_prod.php">
+            <br>
+            Descrição:<br><input name ="c_descricao" type="text" size=50 maxlength=50><br>
+            Estoque:<br><input name ="c_quantidade" type="text" size=5 maxlength=5><br>
+            Marca:<br><input name ="c_autor" type="text" size=50 maxlength=50></p>
+            <select name = "c_hardware">
+                <option>Selecione...</option>
+                <option value = "processador">Processador</option>
+                <option value = "placa_mae">Placa-Mãe</option>
+                <option value = "placa_video">Placa de Vídeo</option>
+                <option value = "ram">Memória RAM</option>
+                <option value = "fonte">Fonte</option>
+                <option value = "cooler">Cooler</option>
+                <option value = "ssd">SSD</option>
+                <option value = "hd">HD</option>
+                <option value = "gabinete">Gabinete</option>
+            </select></p>
+            <input type="checkbox" name="c_termo" value="sim">Aceita os termos?</p>
+            <input class="enviar" type=submit name="Enviar">
+            </p>
+        </form>
+        </div>
+    </div>
+</body>
+</html>
