@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="opera-gx">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style_cad.css" media="screen" />
+    <title>DS2 - Cadastro de Produto</title>
+</head>
+<body class="fundo">
+    <header>
+        <a class="logo" href="index.html"><img src="images/LogoDS2.png"></a>
+        <nav>
+            <ul class="nav__links">
+                <li><a href="cad_prod.html">Cadastrar</a></li>
+                <li><a href="cad_atu.html">Atualizar</a></li>
+                <li><a href="cad_exc.html">Excluir</a></li>
+                <li><a class="cta" href="index.html">Início</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div>
+        <div class="titulo">
+            <h1>DS2 - Cadastro de Produto</h1>
+        </div>
+        <div class="texto">
+        <form name = "cadastrar_produto" method = "post" action ="cad_prod.php">
+            <br>
+            Descrição:<br><input name ="c_descricao" type="text" size=50 maxlength=50><br>
+            Estoque:<br><input name ="c_quantidade" type="text" size=5 maxlength=5><br>
+            Marca:<br><input name ="c_autor" type="text" size=50 maxlength=50></p>
+            <select name = "c_hardware">
+                <option>Selecione...</option>
+                <option value = "processador">Processador</option>
+                <option value = "placa_mae">Placa-Mãe</option>
+                <option value = "placa_video">Placa de Vídeo</option>
+                <option value = "ram">Memória RAM</option>
+                <option value = "fonte">Fonte</option>
+                <option value = "cooler">Cooler</option>
+                <option value = "ssd">SSD</option>
+                <option value = "hd">HD</option>
+                <option value = "gabinete">Gabinete</option>
+            </select></p>
+            Aceita os termos?
+            <label class="container">
+              <input type="checkbox">
+              <div class="checkmark"></div>
+            </label>
+            <button type=submit>Cadastrar</button>
+            </p>
+        </form>
+        </div>
+    </div>
+</body>
+</html>
