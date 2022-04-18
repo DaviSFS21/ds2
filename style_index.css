@@ -9,7 +9,7 @@ header {
 display: flex;
 justify-content: flex-end;
 align-items: center;
-padding: 20px 10%;
+padding: 15px 8%;
 background-color: #00000000;
 }
 
@@ -39,7 +39,7 @@ display: flex;
 }
 
 .nav__links li a:hover {
-    color: #ff0040;
+    color: #ff0065;
 }
 
 .cta {
@@ -53,7 +53,7 @@ display: flex;
 }
 
 .cta:hover {
-    background-color: #ff0040;
+    background-color: #ff0065;
 }
 
 .titulo{
@@ -62,7 +62,7 @@ display: flex;
     margin-right:32%;
     text-align: center;
     background-image:
-    linear-gradient(to right, #ff0000, #ff0040);
+    linear-gradient(to right, #ff0000, #ff0065);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent
@@ -83,7 +83,7 @@ display: flex;
 .enviar{
     border-radius: 5px;
     padding: 5px;
-    background-color: rgb(0, 0, 0);
+    background-color: #000000;
     color: white;
 }
 
