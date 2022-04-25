@@ -14,11 +14,11 @@
         $descricao = $_POST['c_descricao'];
         $estoque = $_POST['c_estoque'];
         $marca = $_POST['c_marca'];
-        $c_hardware = $_POST['c_hardware'];
+        $hardware = $_POST['c_hardware'];
         $termo = $_POST['c_termo'];
         
-        $sql = "INSERT INTO `item`(`descricao`, `estoque`, `marca`, `c_hardware`, `categoria_livro`,`termo`)
-        VALUES ('$descricao', '$estoque', '$marca', '$hardware', '$categoria_livro', '$termo')";
+        $sql = "INSERT INTO `item`(`descricao`, `estoque`, `marca`, `hardware`, `termo`)
+        VALUES ('$descricao', '$estoque', '$marca', '$hardware', '$termo')";
 
         $resultado = mysqli_query($conexao, $sql);
 
