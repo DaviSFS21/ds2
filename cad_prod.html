@@ -19,16 +19,27 @@
             </ul>
         </nav>
     </header>
-    <div>
-        <div class="titulo">
-            <h1>DS2 - Cadastro de Produto</h1>
-        </div>
-        <div class="texto">
+    <div class="titulo">
+        <h1>DS2 - Cadastro de Produto</h1>
+    </div>
+    <div class="texto">
         <form name = "cadastrar_produto" method = "post" action ="cad_prod.php">
             <br>
-            Descrição:<br><input name ="c_descricao" type="text" size=50 maxlength=50><br>
-            Estoque:<br><input name ="c_quantidade" type="text" size=5 maxlength=5><br>
-            Marca:<br><input name ="c_autor" type="text" size=50 maxlength=50></p>
+            <div class="input-field">
+                <input name ="c_descricao" type="text" maxlength=50 required>
+                <label>Descrição</label>
+                <span></span>
+            </div><br>
+            <div class="input-field">
+                <input name ="c_estoque" type="text" maxlength=5 required>
+                <label>Estoque</label>
+                <span></span>
+            </div><br>
+            <div class="input-field">
+                <input name ="c_marca" type="text" maxlength=30 required>
+                <label>Marca</label>
+                <span></span>
+            </div><br>
             <select name = "c_hardware">
                 <option>Selecione...</option>
                 <option value = "processador">Processador</option>
@@ -49,7 +60,6 @@
             <button type=submit>Cadastrar</button>
             </p>
         </form>
-        </div>
     </div>
 </body>
 </html>
