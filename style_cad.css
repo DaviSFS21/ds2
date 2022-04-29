@@ -48,7 +48,22 @@ background-color: #00000000;
 }
 
 .nav__links li a:hover {
-    color: #ff0065;
+    color: #ff0000;
+}
+
+.cta {
+    margin-left: 5px;
+    padding: 9px 25px;
+    background-color: #ff0065;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: #ffffff;
+}
+
+.cta:hover {
+    background-color: #ffffff;
 }
 
 .logo {
@@ -78,23 +93,6 @@ background-color: #00000000;
     transform: scaleX(1);
 }
 
-.cta {
-    margin-left: 5px;
-    padding: 9px 25px;
-    background-color: #ff0065;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-    color: #ffffff;
-}
-
-.cta:hover {
-    color: #ffffff;
-    background-color: #000000;
-    box-shadow: 0px 0px 10px 2px #ffffffb0;
-}
-
 .titulo{
     font-size: 30px;
     margin-top: 10px;
@@ -109,13 +107,14 @@ background-color: #00000000;
 }
 
 .texto{
+    background-color: #000000;
     text-align: center;
-    font-size: 18px;
-    color: white;
+    font-size: 19px;
+    color: #ffffff;
     margin-top: 20px;
     margin-bottom: 70px;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 25%;
+    margin-right: 25%;
     border-radius: 10px;
 }
 
@@ -130,6 +129,7 @@ background-color: #00000000;
 .input-field input[type="text"]{
     position: relative;
     background: transparent;
+    font-size: 16px;
     border: none;
     color: #ffffff;
     width: 100%;
@@ -150,7 +150,7 @@ background-color: #00000000;
     transform: translateY(-20px);
     font-size: 14px;
     color: #ff0000;
-    padding: 5px 5px;
+    padding: 5px 0px;
 }
 
 .input-field span{
@@ -184,11 +184,19 @@ background-color: #00000000;
     transition: transform 0.5s ease-in-out;
 }
 
-.enviar{
-    border-radius: 5px;
-    padding: 5px;
-    background-color: #000000;
+select {
     color: #ffffff;
+    background-color: #000000;
+    height: 25px;
+    border: 2px solid #1b1b1b;
+    border-radius: 3px;
+    font-size: 15px;
+    padding-right: 20px;
+    overflow: hidden;
+}
+
+select:focus {
+    outline: none;
 }
 
 .container input {
@@ -280,12 +288,12 @@ button::before {
 }
    
 button:hover::before {
-    border-radius: 10px;
+    border-radius: 5px;
     height: 100%;
 }
    
 button:hover {
-    color: rgb(0, 0, 0);
+    color: #000000;
 }
    
 button:active:before {
