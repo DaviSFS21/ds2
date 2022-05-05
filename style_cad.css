@@ -6,6 +6,20 @@
     outline: none;
 }
 
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background: #000000;
+}
+
+::-webkit-scrollbar-thumb{
+    background: white;
+    border-radius: 2px;
+}
+
 body{
     height: 100%;
     width: 100%;
@@ -48,7 +62,22 @@ background-color: #00000000;
 }
 
 .nav__links li a:hover {
-    color: #ff0065;
+    color: #ff0000;
+}
+
+.cta {
+    margin-left: 5px;
+    padding: 9px 25px;
+    background-color: #ff0065;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: #ffffff;
+}
+
+.cta:hover {
+    background-color: #ffffff;
 }
 
 .logo {
@@ -78,23 +107,6 @@ background-color: #00000000;
     transform: scaleX(1);
 }
 
-.cta {
-    margin-left: 5px;
-    padding: 9px 25px;
-    background-color: #ff0065;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-    color: #ffffff;
-}
-
-.cta:hover {
-    color: #ffffff;
-    background-color: #000000;
-    box-shadow: 0px 0px 10px 2px #ffffffb0;
-}
-
 .titulo{
     font-size: 30px;
     margin-top: 10px;
@@ -109,25 +121,29 @@ background-color: #00000000;
 }
 
 .texto{
-    align-items: center;
-    font-size: 18px;
-    color: white;
+    background-color: #000000;
+    text-align: center;
+    font-size: 19px;
+    color: #ffffff;
     margin-top: 20px;
     margin-bottom: 70px;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 25%;
+    margin-right: 25%;
     border-radius: 10px;
 }
 
 .input-field{
+    margin-left: auto;
+    margin-right: auto;
     position: relative;
     height: 20px;
     width: 60%;
 }
 
 .input-field input[type="text"]{
-    position: absolute;
+    position: relative;
     background: transparent;
+    font-size: 16px;
     border: none;
     color: #ffffff;
     width: 100%;
@@ -135,7 +151,7 @@ background-color: #00000000;
 
 .input-field label{
     position: absolute;
-    top: 0;
+    top: 2px;
     left: 0;
     color: #555555;
     pointer-events: none;
@@ -146,15 +162,14 @@ background-color: #00000000;
 .input-field input[type="text"]:focus + label,
 .input-field input[type="text"]:valid + label{
     transform: translateY(-20px);
-    font-size: 12px;
-    color: #ffffff;
-    background: ff006a;
-    padding: 2px 6px;
+    font-size: 14px;
+    color: #ff0000;
+    padding: 5px 0px;
 }
 
 .input-field span{
     position: absolute;
-    bottom: 0;
+    bottom: -5px;
     right: 0;
     display: block;
     background: #555555;
@@ -183,15 +198,23 @@ background-color: #00000000;
     transition: transform 0.5s ease-in-out;
 }
 
-.enviar{
-    border-radius: 5px;
-    padding: 5px;
-    background-color: #000000;
+select {
     color: #ffffff;
+    background-color: #000000;
+    height: 25px;
+    border: 2px solid #1b1b1b;
+    border-radius: 3px;
+    font-size: 15px;
+    padding-right: 20px;
+    overflow: hidden;
+}
+
+select:focus {
+    outline: none;
 }
 
 .container input {
-    position: absolute;
+    position: relative;
     opacity: 0;
     cursor: pointer;
     height: 0;
@@ -199,8 +222,6 @@ background-color: #00000000;
 }
    
 .container {
-    margin-left: 33%;
-    margin-top: -32px;
     margin-bottom: 12px;
     display: block;
     position: relative;
@@ -210,6 +231,8 @@ background-color: #00000000;
 }
    
 .checkmark {
+    margin-left: auto;
+    margin-right: auto;
     position: relative;
     margin-bottom: 20px;
     top: 0;
@@ -279,27 +302,74 @@ button::before {
 }
    
 button:hover::before {
-    border-radius: 10px;
+    border-radius: 5px;
     height: 100%;
 }
    
 button:hover {
-    color: rgb(0, 0, 0);
+    color: #000000;
 }
    
 button:active:before {
     background: #ffffff;
 }
 
-::-webkit-scrollbar{
-    width: 10px;
-}
-
-::-webkit-scrollbar-track{
-    background: #000000;
-}
-
-::-webkit-scrollbar-thumb{
-    background: white;
-    border-radius: 3px;
-}
+.rodape {
+    padding:40px 0;
+    background-color:#000000;
+    color:#b3b3b3;
+  }
+  
+  .rodape ul {
+    padding:0;
+    list-style:none;
+    text-align:center;
+    font-size:18px;
+    line-height:1.6;
+    margin-bottom:0;
+  }
+  
+  .rodape li {
+    padding:0 10px;
+  }
+  
+  .rodape ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+  }
+  
+  .rodape ul a:hover {
+    opacity:1;
+  }
+  
+  .rodape .social {
+    text-align:center;
+    padding-bottom:25px;
+  }
+  
+  .rodape .social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #ccc;
+    margin:0 8px;
+    color:inherit;
+    opacity:0.75;
+  }
+  
+  .rodape .social > a:hover {
+    opacity:0.9;
+  }
+  
+  .rodape .copyright {
+    margin-top:15px;
+    text-align:center;
+    font-size:13px;
+    color:#444444;
+    margin-bottom:0;
+  }
