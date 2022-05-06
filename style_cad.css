@@ -4,6 +4,7 @@
     margin: 0;
     font-family: 'Bahnschrift';
     outline: none;
+<<<<<<< HEAD
 }
 
 
@@ -18,6 +19,8 @@
 ::-webkit-scrollbar-thumb{
     background: white;
     border-radius: 2px;
+=======
+>>>>>>> c40578441cda8456d73fe6c701564a7b056cff6a
 }
 
 body{
